@@ -61,3 +61,13 @@
 #*.PDF   diff=astextplain
 #*.rtf   diff=astextplain
 #*.RTF   diff=astextplain
+
+###############################################################################
+# GitHub Linguist の言語統計設定
+#
+# jquery-3.4.1.slim.js は NuGet パッケージ jQuery 3.4.1 (MIT License) に同梱
+# されている第三者ライブラリで、https://code.jquery.com/jquery-3.4.1.slim.js と
+# 同一の内容です。Linguist の既定の vendored パターンに一致しないため、
+# このファイルのみを明示的に vendored として指定しています。
+###############################################################################
+AppleApp/Scripts/jquery-3.4.1.slim.js linguist-vendored
